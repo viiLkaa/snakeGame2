@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "game";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: #6e7888;
+  background-color: #222738;
+}
+canvas {
+  background-color: #181825;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#ui {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+#score {
+  color:#6e7888;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.noselect {
+  user-select: none;
+}
+
+#speedUP {
+  font-size: 15px;
+  padding: 10px 20px;
+  background: #6e7888;
+  border: none;
+  color: #222738;
+  border-radius: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#speedUP:hover {
+  background: #6e7888;
+  background: #4cffd7;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.8;
+}
+
+#speedUP:active{
+  position: relative;
+  top: 2px;
+}
+
+
+#speedDW {
+  font-size: 15px;
+  padding: 10px 20px;
+  background: #6e7888;
+  border: none;
+  color: #222738;
+  border-radius: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+#speedDW:hover {
+  background: #6e7888;
+  background: #4cffd7;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.8;
+}
+
+.speedDW:active{
+  position: relative;
+  top: 2px;
+}
+
+#replay {
+  font-size: 15px;
+  padding: 10px 20px;
+  background: #6e7888;
+  border: none;
+  color: #222738;
+  border-radius: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#replay:hover {
+  background: #6e7888;
+  background: #4cffd7;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.8;
+}
+
+#replay:active{
+  position: relative;
+  top: 2px
+}
+
+
+@media (max-width: 600px) {
+  #replay {
+    margin-bottom: 20px;
+  }
+  #replay,
+  h2 {
+    transform: rotate(0deg);
+  }
+  #ui {
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+  }
+  #score {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .container {
+    flex-flow: column wrap;
+  }
+}
+#name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
